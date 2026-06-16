@@ -1,0 +1,17 @@
+name: dft3c-cpu
+channels:
+  - conda-forge
+dependencies:
+  - ase
+  - dftd3-python
+  - dftd4-python
+  - pyscf >=2.8,<2.14
+  - python
+  - skala
+  # Testing and development
+  - pre-commit
+  - pytest
+  - pytest-cov
+  - pytest-randomly
+  - ruff
+  - mypy
