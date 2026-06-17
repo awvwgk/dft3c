@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dft3c"
-version = "0.1.0"
+version = "0.1.1"
 description = "Density function theory with corrections, DFT-3c"
 readme = "README.rst"
 license.text = "Apache-2.0"

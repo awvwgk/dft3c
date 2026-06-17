@@ -68,9 +68,7 @@ jobs:
       run: >-
         pytest
         -v
-        --doctest-modules
         --cov=dft3c --cov-report=xml --cov-report=term-missing --cov-report=html
         --durations=50 --durations-min=1.0
-        --pyargs dft3c
         tests/
       shell: micromamba-shell {0}

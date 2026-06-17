@@ -4,7 +4,7 @@ PySCF integration for *DFT-3c* methods.
 
 from typing import Any, Union
 
-from pyscf import dft as pyscf_dft
+from gpu4pyscf import dft as pyscf_dft
 from pyscf import gto
 
 from dft3c.pyscf.d3 import d3_energy

@@ -1,4 +1,4 @@
-name: dft3c-cpu
+name: dft3c-gpu
 channels:
   - conda-forge
 dependencies:
@@ -7,8 +7,11 @@ dependencies:
   - dftd4-python
   - pyscf >=2.8,<2.14
   - python
-  - pytorch * cpu*
+  - pytorch * cuda*
   - skala
+  - cuda-toolkit >=12,<13
+  - cuda-version >=12,<13
+  - cutensor >=2
   # Testing and development
   - pre-commit
   - pytest
@@ -16,3 +19,5 @@ dependencies:
   - pytest-randomly
   - ruff
   - mypy
+  - pip:
+    - gpu4pyscf-cuda12x >=1.5,<1.8
